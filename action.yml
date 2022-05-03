@@ -12,7 +12,7 @@ inputs:
       as `jsonresume-theme-{theme}` in NPM.
       You can search for themes at https://npmsearch.com/?q=jsonresume-theme
     required: true
-    default: 'flat'
+    default: 'caffeine'
   resume_filepath:
     description: |
       File path of the resume in JSONResume format
@@ -22,7 +22,7 @@ inputs:
     description: |
       Output file path for exported HTML file.
     required: false
-    default: 'index.html'
+    default: 'resume'
 runs:
   using: 'docker'
   image: 'Dockerfile'
