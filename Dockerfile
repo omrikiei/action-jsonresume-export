@@ -43,7 +43,7 @@ RUN apt-get update && apt-get install -y \
   libgbm-dev \
   lsb-release \
   xdg-utils \
-  python3 &&
+  python3 && \
   apt --fix-broken install
 
 RUN npm init -y
