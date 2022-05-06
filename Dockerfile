@@ -34,12 +34,13 @@ RUN apt-get update && apt-get install -y \
   libxfixes3 \
   libxi6 \
   libxrandr2 \
-  libxrender1 \
+  libxrender1 \ 
   libxss1 \
   libxtst6 \
   ca-certificates \
   fonts-liberation \
   libnss3 \
+  libgbm-dev \
   lsb-release \
   xdg-utils && \
   apt --fix-broken install
