@@ -11,4 +11,6 @@ echo "Installing theme: ${THEME}"
 npm install ${THEME_PACKAGE}
 PUPPETEER_PRODUCT=firefox npm install
 
+python -m http.server &
+
 resume export --resume ${RESUME} --theme ${THEME} --format pdf /github/workspace/${OUTPUT}.pdf
