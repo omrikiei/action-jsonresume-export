@@ -38,10 +38,10 @@ RUN apt-get update && apt-get install -y \
   libxtst6 \
   ca-certificates \
   fonts-liberation \
-  libindicator7 \
   libnss3 \
   lsb-release \
-  xdg-utils
+  xdg-utils && \
+  apt --fix-broken install
 
 RUN npm init -y
 RUN npm install puppeteer
