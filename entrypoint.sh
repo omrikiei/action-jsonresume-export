@@ -9,5 +9,6 @@ echo "Installing theme: ${THEME}"
 
 # NOTE: this needs to be installed locally, not globally
 npm install ${THEME_PACKAGE}
+PUPPETEER_PRODUCT=firefox npm install
 
 resume export --resume ${RESUME} --theme ${THEME} --format pdf /github/workspace/${OUTPUT}.pdf
