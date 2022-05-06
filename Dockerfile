@@ -1,6 +1,7 @@
 ARG VERSION=v3.0.7
 FROM node:slim AS base
 
+WORKDIR /data
 # https://docs.browserless.io/blog/2018/04/25/chrome-linux.html
 # Install all of Chrome's necessary packages
 RUN apt-get update && apt-get install -y \
