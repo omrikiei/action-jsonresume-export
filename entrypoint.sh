@@ -10,5 +10,5 @@ echo "Installing theme: ${THEME}"
 # NOTE: this needs to be installed locally, not globally
 npm install ${THEME_PACKAGE}
 
-resume export --resume ${RESUME} --theme ${THEME} --format html ${OUTPUT}.html && \
-resume export --resume ${RESUME} --theme ${THEME} --format pdf ${OUTPUT}.pdf
+resume export --resume ${RESUME} --theme ${THEME} --format html /github/workspace/${OUTPUT}.html && \
+resume export --resume ${RESUME} --theme ${THEME} --format pdf /github/workspace/${OUTPUT}.pdf
