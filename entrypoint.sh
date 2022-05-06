@@ -14,3 +14,4 @@ PUPPETEER_PRODUCT=firefox npm install
 python3 -m http.server &
 
 resume export --resume ${RESUME} --theme ${THEME} --format pdf /github/workspace/${OUTPUT}.pdf
+resume export --resume ${RESUME} --theme ${THEME} --format html /github/workspace/${OUTPUT}.html
