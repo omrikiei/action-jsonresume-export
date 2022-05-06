@@ -42,7 +42,8 @@ RUN apt-get update && apt-get install -y \
   libnss3 \
   libgbm-dev \
   lsb-release \
-  xdg-utils && \
+  xdg-utils \
+  python3 &&
   apt --fix-broken install
 
 RUN npm init -y
